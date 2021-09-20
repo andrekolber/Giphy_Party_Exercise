@@ -2,3 +2,15 @@ div {
     display: inline;
     padding: 10px;
 }
+
+form {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+body {
+    background-color: rgb(88, 88, 224);
+}
