@@ -4,10 +4,10 @@ const $giphSearchInput = $('#giph-input');
 function addGiph(res) {
 	const numResults = res.data.length;
 	if (numResults) {
-		const randomGiph = Math.floor(Math.random() * numResults);
+		const randomGiphIdx = Math.floor(Math.random() * numResults);
 		const $newCol = $('<div>', { class: 'col-md-4 col-12 mb-4' });
 		const $newGif = $('<img>', {
-			src   : res.data[randomGiph].images.original.url,
+			src   : res.data[randomGiphIdx].images.original.url,
 			class : 'giph',
 		});
 		$newCol.append($newGif);
